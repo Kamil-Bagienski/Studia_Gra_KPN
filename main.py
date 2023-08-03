@@ -11,6 +11,8 @@ def tura_komputera():
 def tura_gracza():
     print("1. Kamien \U0001F5FF 2. Papier \U0001F4DC 3. Nozyce \U00002702")
     wybor_gracza=int(input("Wybierz kamien, papier albo nozyce(wpisz 1-3): "))
+    if wybor_gracza<1 or wybor_gracza>3:
+        tura_gracza()
     return wybor_gracza
 
 
